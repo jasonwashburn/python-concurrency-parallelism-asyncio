@@ -1,3 +1,4 @@
+*.tsv
 async/*.txt
 sync/*.txt
 threading/*.txt
@@ -131,3 +132,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+examples/asyncio_and_multiprocessing/asyncio_with_multiprocessing.py
