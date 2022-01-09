@@ -13,3 +13,22 @@ async def test_say_hello(name):
         name (str): A name to test
     """
     await say_hello(name)
+
+
+class TestSayHelloThrowsExceptions:
+    @pytest.mark.parametrize(
+        "name",
+        [
+            "",
+        ],
+    )
+    @pytest.mark.asyncio
+    async def test_say_hello_value_error(self, name):
+        with pytest.raises(ValueError):
+            await say_hello(name)
+
+    @pytest.mark.parametrize("name", [19, {"name", "Diane"}, []])
+    @pytest.mark.asyncio
+    async def test_say_hello_type_error(self, name):
+        with pytest.raises(TypeError):
+            await say_hello(name)
