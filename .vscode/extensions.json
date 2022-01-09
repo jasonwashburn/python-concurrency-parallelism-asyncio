@@ -1,5 +1,7 @@
 {
     "recommendations": [
-        "benjaminadk.emojis4git"
+        "benjaminadk.emojis4git",
+        "kevinrose.vsc-python-indent",
+        "njpwerner.autodocstring"
     ]
 }
